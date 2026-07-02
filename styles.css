@@ -1,0 +1,1305 @@
+:root {
+    --black: #0D0D0D;
+    --branco: #FFFFFF;
+    --verde: #00D47F;
+    --laranja: #FF6600;
+    --azul: #0066FF;
+    --bege: #C49A6C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Roboto", sans-serif;
+
+}
+
+body {
+    background-color: var(--black);
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.327);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+
+}
+
+.logo {
+    padding-left: 60px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100px;
+
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    font-size: 17px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.5s;
+    position: relative;
+
+}
+
+.menu a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--verde);
+    height: 2px;
+    width: 0%;
+    transition: 0.3s ease;
+
+}
+
+.menu a:hover::after {
+    width: 100%;
+    
+}
+
+.modelo {
+    padding-right: 60px;
+}
+.modelo i{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 7px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.modelo button {
+    height: 40px;
+    width: 90px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid var(--azul);
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+
+.modelo button a {
+    text-decoration: none;
+    color: var(--azul);
+}
+
+
+
+.modelo button:hover {
+    transform: scale(1.05);
+}
+
+section.home {
+    padding: 100px 20px 80px;
+    text-align: center;
+    background: url('imagens/home.png') no-repeat center center / cover fixed;
+
+}
+
+h1 {
+    font-size: clamp(0.5rem, 3vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+
+
+
+.intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    padding: 0 15px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.dife {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 60px;
+    padding: 0 20px;
+    
+}
+
+.dife>div {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px 30px;
+    border-radius: 15px;
+    flex: 1 1 250px;
+    min-width: 220px;
+    backdrop-filter: blur(8px);
+    color: rgb(81, 81, 81);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.dife>div:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.mini {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+    margin-bottom: 60px;
+}
+
+.mini>div {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.mini>div:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: scale(1.02);
+}
+
+.mini h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.mini p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.frase {
+    max-width: 800px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.frase h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffda0a;
+}
+
+.frase p {
+    color: white;
+}
+
+.carros-eletricos {
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(imagens/eletrico.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: inset 1px 1px 20px rgb(255, 255, 255);
+    background-attachment: fixed;
+}
+
+.carros-eletricos .inicio h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    text-shadow: 1px 1px 6px black;
+
+}
+
+
+.carros-eletricos .inicio p {
+    background-color: rgba(0, 0, 0, 0.446);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    border: 1px solid rgb(174, 174, 174);
+    text-align: justify;
+    margin-left: 30%;
+
+}
+
+
+.carros-eletricos .vantagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    transition: 0.5s;
+
+
+}
+
+.carros-eletricos .vantagens :hover{
+    transform: scale(1.05);
+}
+
+.carros-eletricos .vantagens p {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px 30px;
+    border-radius: 15px;
+    flex: 1 1 250px;
+    min-width: 220px;
+    backdrop-filter: blur(8px);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.carros-eletricos .vantagens p span {
+    color: rgb(175, 175, 175);
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.carros-eletricos .cars-eletrico {
+    padding: 30px;
+
+}
+
+.carros-eletricos .cars-eletrico h3 {
+    color: rgb(64, 64, 64);
+}
+
+.carros-eletricos .cars-eletrico p {
+    padding-top: 5px;
+    color: rgb(157, 156, 156);
+    background-color: rgba(0, 0, 0, 0.526);
+    max-width: 700px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-left: 3px solid var(--laranja);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.carros-eletricos .cars-eletrico p:hover{
+    border-right: 3px solid var(--laranja);
+}
+
+
+.carros-combustao {
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(imagens/camaro-cars.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: inset 1px 1px 20px rgb(255, 255, 255);
+    background-attachment: fixed;
+}
+
+.carros-combustao .inicio-seg h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    text-shadow: 1px 1px 6px black;
+
+}
+
+.carros-combustao .inicio-seg p {
+    background-color: rgba(0, 0, 0, 0.446);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    border: 1px solid rgb(174, 174, 174);
+    text-align: justify;
+    margin-left: 30%;
+}
+
+.carros-combustao .vantagens-comb {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    transition: 0.5s;
+
+
+}
+
+.carros-combustao .vantagens-comb :hover{
+    transform: scale(1.05);
+}
+
+.carros-combustao .vantagens-comb p {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px 30px;
+    border-radius: 15px;
+    flex: 1 1 250px;
+    min-width: 220px;
+    backdrop-filter: blur(8px);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.carros-combustao .cars-combustao {
+    padding: 30px;
+
+}
+
+.carros-combustao .cars-combustao h3 {
+    color: rgb(64, 64, 64);
+}
+
+.carros-combustao .cars-combustao p {
+    padding-top: 5px;
+    color: rgb(157, 156, 156);
+    background-color: rgba(0, 0, 0, 0.526);
+    max-width: 700px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-left: 3px solid var(--laranja);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.carros-combustao .cars-combustao p:hover{
+    border-right: 3px solid var(--laranja);
+}
+
+.carros-hibridos {
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(imagens/camionete-hibri.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: inset 1px 1px 20px rgb(255, 255, 255);
+    background-attachment: fixed;
+}
+
+.carros-hibridos .inicio-hibri h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    text-shadow: 1px 1px 6px black;
+
+}
+
+.carros-hibridos .inicio-hibri p {
+    background-color: rgba(0, 0, 0, 0.446);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: justify;
+    margin-left: 30%;
+}
+
+.carros-hibridos h4 {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+.carros-hibridos .tipos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+}
+
+.carros-hibridos .Plug {
+    max-width: 700px;
+    padding-top: 10px;
+    backdrop-filter: blur(8px);
+    border-radius: 30px;
+    margin-top: 30px;
+    border: 1px solid white;
+
+}
+
+.carros-hibridos .Plug h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.carros-hibridos .Plug h5 {
+    color: white;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 5px black;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.carros-hibridos .Plug p {
+    color: white;
+    padding: 10px;
+}
+
+.carros-hibridos .Plug .vantagens-plug {
+    padding-bottom: 10px;
+}
+
+
+.carros-hibridos .convencionais {
+    max-width: 700px;
+    padding-top: 10px;
+    backdrop-filter: blur(8px);
+    border-radius: 30px;
+    margin-top: 30px;
+    border: 1px solid white;
+
+}
+
+.carros-hibridos .convencionais h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.carros-hibridos .convencionais h5 {
+    color: white;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 5px black;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.carros-hibridos .convencionais p {
+    color: white;
+    padding: 10px;
+}
+
+.carros-hibridos .convencionais .vantagens-conv {
+    place-items: center;
+    padding-bottom: 10px;
+}
+
+.carros-hibridos .convencionais .vantagens-conv p {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 160px;
+    height: 150px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.carros-hibridos .por-hibri {
+    margin-top: 50px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+
+}
+
+.carros-hibridos .por-hibri :hover{
+    transform: scale(1.05);
+}
+
+
+.carros-hibridos h3 {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 1.3rem;
+    margin: 40px 0px 10px 40px;
+
+
+}
+
+.carros-hibridos .por-hibri p {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px 30px;
+    border-radius: 15px;
+    flex: 1 1 250px;
+    min-width: 220px;
+    backdrop-filter: blur(8px);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    margin-right: 50px;
+}
+
+
+.carros-hibridos .cars-hibri h3 {
+    color: gray;
+}
+
+.carros-hibridos .cars-hibri p {
+    padding-top: 5px;
+    color: rgb(157, 156, 156);
+    background-color: rgba(0, 0, 0, 0.526);
+    max-width: 700px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-left: 3px solid var(--laranja);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.carros-hibridos .cars-hibri p:hover{
+    border-right: 3px solid var(--laranja);
+}
+
+.Depoimentos {
+    background-image: url(imagens/home.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+.Depoimentos h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.Depoimentos .depoiments {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px;
+}
+
+.Depoimentos .depoiments p {
+    background-color: rgba(255, 255, 255, 0.078);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 7px solid #FF6600;
+    border-right: 7px solid #FF6600;
+    color: rgb(206, 206, 206);
+    backdrop-filter: blur(8px);
+}
+
+.Depoimentos .depoiments p span {
+    color: rgb(205, 205, 205);
+    font-weight: 500;
+    display: flex;
+    justify-content: end;
+}
+
+.Depoimentos .opniao {
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 5px black;
+    padding: 10px;
+    max-width: 800px;
+    backdrop-filter: blur(8px);
+    border-left: 7px solid white;
+    border-right: 7px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25%;
+
+}
+
+.sobre {
+    background-image: url(imagens/home.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+
+.sobre .inicio-sobre h2 {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px black;
+
+
+}
+
+.sobre .inicio-sobre p {
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 5px black;
+    padding: 10px;
+    max-width: 600px;
+    backdrop-filter: blur(8px);
+    border-left: 7px solid white;
+    border-right: 7px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.sobre .missao {
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.sobre .missao h4 {
+    color: gray;
+    margin-bottom: 10px;
+
+}
+
+.sobre .missao p {
+    padding-top: 5px;
+    color: rgb(157, 156, 156);
+    background-color: rgba(0, 0, 0, 0.526);
+    max-width: 700px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-left: 3px solid var(--laranja);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.sobre .visao {
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.sobre .visao h4 {
+    color: gray;
+    margin-bottom: 10px;
+
+}
+
+.sobre .visao p {
+    padding-top: 5px;
+    color: rgb(157, 156, 156);
+    background-color: rgba(0, 0, 0, 0.526);
+    max-width: 700px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-left: 3px solid var(--laranja);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.sobre .valores {
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.sobre .valores h4 {
+    color: gray;
+    margin-bottom: 10px;
+
+}
+
+.sobre .valores p {
+    padding-top: 5px;
+    color: rgb(157, 156, 156);
+    background-color: rgba(0, 0, 0, 0.526);
+    max-width: 700px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-left: 3px solid var(--laranja);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.contato {
+    background-image: url(imagens/home.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    padding-top: 60px;
+
+}
+.contato .inicio-contato h2{
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+.contato .inicio-contato p{
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 5px black;
+    padding: 10px;
+    width: 600px;
+    backdrop-filter: blur(8px);
+    border-left: 7px solid white;
+    border-right: 7px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.contato-container {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 2rem;
+
+}
+
+h5 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #ff0000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contato-loc {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contato-loc p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+
+.contato-loc span {
+    font-size: 0.95rem;
+    color: #ccc;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.overlay button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    width: fit-content;
+}
+
+.overlay button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+.redes {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.redes i {
+    font-size: 1.8rem;
+    color: #ff0000;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.redes i:hover {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.bloco-modelos {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  color: rgb(248, 245, 245);
+  z-index: 999;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.bloco-modelos .fechar-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(237, 237, 237);
+}
+
+.bloco-modelos .fechar-btn i{
+    font-size: 18px;
+    padding-left: 5px;
+    
+}
+
+summary{
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.302);
+    width: 300px;
+    margin-left: 40%;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+summary:hover{
+    box-shadow: 2px 2px 10px white;
+    transform: scale(1.05);
+    
+}
+
+.carros-comb{
+    padding-top: 80px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.carros-comb h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carros-comb p{
+    width: 50%;
+    line-height: 26px;
+    font-size: 1rem;
+}
+
+.comb{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    opacity: 0;
+    animation: fadein 1.6s ease forwards;
+    flex-wrap: wrap;
+    
+    
+}
+
+details:not([open]) .comb {
+    opacity: 0;
+    animation: none;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        
+    }
+
+    to {
+        opacity: 1;
+        
+    }
+}
+
+
+
+.comb .comb-carro{
+    background-color: #000000;
+    border-radius: 20px;
+    width: 950px;
+    height: 350px;
+    border: 1px solid white;
+    text-align: left;
+    line-height: 25px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    
+    
+    
+}
+
+.comb .comb-carro img{
+     width: 50%;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 10px;
+    border: 1px solid white;
+  
+}
+
+.comb .comb-carro .observacao{
+    line-height: 26px;
+}
+
+.comb .comb-carro .observacao h3{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+
+.observacao button {
+  font-family: inherit;
+  font-size: 20px;
+  background: linear-gradient(to right, purple 30px, blue);
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.observacao button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+    
+}
+
+.observacao button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.observacao button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.observacao button:hover svg {
+  transform: translateX(2.8em) rotate(45deg) scale(1.1);
+}
+
+.observacao button:hover span {
+  transform: translateX(7em);
+}
+
+.observacao button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+
+.comb-eletricos{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    opacity: 0;
+    animation: fadein 1.6s ease forwards;
+    flex-wrap: wrap;
+    
+    
+}
+
+details:not([open]) .comb {
+    opacity: 0;
+    animation: none;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        
+    }
+
+    to {
+        opacity: 1;
+        
+    }
+}
+
+.comb-eletricos .comb-carro{
+    background-color: #000000;
+    border-radius: 20px;
+    width: 950px;
+    height: 350px;
+    border: 1px solid white;
+    text-align: left;
+    line-height: 25px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  
+}
+
+
+
+.comb-eletrico .comb-carro{
+    background-color: #000000;
+    border-radius: 20px;
+    width: 950px;
+    height: 350px;
+    border: 1px solid white;
+    text-align: left;
+    line-height: 25px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    
+    
+    
+}
+
+.comb-eletricos .comb-carro img{
+     width: 50%;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 10px;
+    border: 1px solid white;
+  
+}
+
+.comb-eletricos .comb-carro .observacao{
+    line-height: 26px;
+}
+
+.comb-eletricos .comb-carro .observacao h3{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+
+.carros-comb-eletrico{
+    padding-top: 80px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.carros-comb-eletrico h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carros-comb-eletrico p{
+    width: 50%;
+    line-height: 26px;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 1050px) {
+    summary{
+        margin-bottom: 20px;
+    }
+
+
+  .comb  .comb-carro {
+    width: 90vw;
+    min-width: unset;
+    max-width: 90vw;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+    gap: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .comb {
+    gap: 40px;
+    padding: 0;
+    margin-left: -40px;
+    margin-right: 5vw;
+  }
+  .comb  .comb-carro .observacao {
+    padding: 0 10px 10px 10px;
+  }
+
+  .comb-eletricos  .comb-carro {
+    width: 90vw;
+    min-width: unset;
+    max-width: 90vw;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+    gap: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .comb-eletricos {
+    gap: 40px;
+    padding: 0;
+    margin-left: -40px;
+    margin-right: 5vw;
+  }
+  .comb-eletricos  .comb-carro .observacao {
+    padding: 0 10px 10px 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .comb .comb-carro {
+    width: 90vw;
+    max-width: 90vw;
+    min-width: unset;
+    border-radius: 10px;
+    padding: 10px 15px;
+    gap: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .comb  {
+    padding: 0;
+    gap: 40px;
+    margin-left: -40px;
+    margin-right: 5vw;
+  }
+  .comb .comb-carro img {
+    width: 70vw;
+    max-width: 70vw;
+    
+    height: auto;
+    margin: 10px auto 16px auto;
+    border-radius: 10px;
+    display: block;
+  }
+  .comb .comb-carro .observacao h3 {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+  }
+  .comb .comb-carro .observacao p {
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+  }
+
+  .comb-eletricos .comb-carro {
+    width: 90vw;
+    max-width: 90vw;
+    min-width: unset;
+    border-radius: 10px;
+    padding: 10px 15px;
+    gap: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .comb-eletricos  {
+    padding: 0;
+    gap: 40px;
+    margin-left: -40px;
+    margin-right: 5vw;
+  }
+  .comb-eletricos .comb-carro img {
+    width: 70vw;
+    max-width: 70vw;
+    
+    height: auto;
+    margin: 10px auto 16px auto;
+    border-radius: 10px;
+    display: block;
+  }
+  .comb-eletricos .comb-carro .observacao h3 {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+  }
+  .comb-eletricos .comb-carro .observacao p {
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+  }
+  .observacao button {
+    font-size: 1rem;
+    margin-left: 125px;
+    margin-top: 10px;
+  }
+
+  .menu{
+        display: none;
+    }
+
+    summary{
+        margin-left: 15%;
+        margin-bottom: 30px;
+    }
+
+    .carros-eletricos .inicio p{
+        display: none;
+    }
+    .carros-combustao .inicio-seg p{
+        display: none;
+    }
+    .carros-hibridos .inicio-hibri p{
+        display: none;
+    }
+    .Depoimentos .opniao{
+        display: none;
+    }
+
+    .sobre .inicio-sobre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sobre .missao{
+        margin-left: 10px;
+    }
+    .sobre .visao{
+        margin-left: 10px;
+    }
+    .sobre .valores{
+        margin-left: 10px;
+    }
+    .contato .inicio-contato p{
+        display: none;
+    }
+
+    .Depoimentos .depoiments{
+        padding: 10px;
+    }
+}
+

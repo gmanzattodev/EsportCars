@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>EsportCars</title>
+    <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/09/25/09/20250925093112-ST8ZUBPM.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/logo.png" alt="logo">
+        </div>
+
+        <nav class="menu">
+            <a href="#home">Home</a>
+            <a href="#carros">Carros</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#Depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="modelo">
+            <button onclick="abrirModelos()" class="fechar-btn"><a href="#">Modelos</a></button>
+            <i id="pefil" class="ri-user-line"></i>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <h1>Os Melhores Carro do Mundo <br> em um só Lugar</h1>
+
+        <div class="intro">
+            <p>Bem-vindo ao nosso portal automotivo! Aqui você encontra informações completas, comparativos detalhados e
+                curiosidades exclusivas sobre os carros mais desejados do planeta. <br>
+                Seja para realizar o sonho de ter um superesportivo ou conhecer as tecnologias dos carros elétricos mais
+                avançados, você está no lugar certo.</p>
+        </div>
+
+        <div class="dife">
+            <div class="Cobertura">
+                <p> Cobertura completa dos modelos mais icônicos e recentes</p>
+            </div>
+            <div class="Comparativos">
+                <p> Comparativos entre carros elétricos, híbridos e a combustão</p>
+            </div>
+            <div class="Notícias">
+                <p> Notícias e novidades do mercado automotivo de luxo</p>
+            </div>
+            <div class="Conteúdo">
+                <p> Conteúdo claro, objetivo e atualizado</p>
+            </div>
+            <div class="Atendimento">
+                <p> Atendimento rápido para suas dúvidas ou cotações</p>
+            </div>
+        </div>
+
+        <div class="mini">
+            <div class="super">
+                <h1>superesportivos</h1>
+                <p>
+                    Explore a potência e o design agressivo de carros como Lamborghini Huracán, Aventador, Porsche 911 e
+                    Camaro SS.
+                </p>
+            </div>
+
+            <div class="eletrico">
+                <h1>Elétricos Do futuro</h1>
+                <p>Conheça o que há de mais avançado em tecnologia e sustentabilidade com BYD e Yangwang U7, U8, U9.</p>
+            </div>
+
+            <div class="hibridos">
+                <h1>Hibridos Inteligentes</h1>
+                <p>
+                    Economia, autonomia e sustentabilidade em modelos híbridos plug-in ou convencionais de grandes
+                    montadoras.
+                </p>
+            </div>
+        </div>
+
+        <div class="frase">
+            <h3>🚀 A emoção de dirigir um carro dos sonhos começa aqui.</h3>
+            <p>Informação de qualidade para quem busca performance, luxo e tecnologia em quatro rodas.</p>
+        </div>
+    </section>
+    <main id="carros">
+        <section class="carros-eletricos">
+            <div class="inicio">
+                <h1 class="futuro">Carros Eletricos</h1>
+                <p>Os carros elétricos revolucionaram o conceito de mobilidade. <br>
+                    Eles utilizam motores movidos a energia elétrica armazenada em baterias de alta capacidade,
+                    eliminando a necessidade de combustíveis fósseis e reduzindo drasticamente as emissões de poluentes.
+                </p>
+            </div>
+
+            <div class="vantagens">
+                <p> <span>Sustentabilidade:</span> Não emitem CO₂ durante o uso, contribuindo para um planeta mais
+                    limpo.
+                </p>
+
+                <p>
+                    <span>Performance:</span> A aceleração dos carros elétricos é instantânea, proporcionando arrancadas
+                    rápidas e
+                    seguras,
+                    como nos modelos Yangwang U9, que vão de 0 a 100 km/h em menos de 3 segundos.
+                </p>
+
+                <p>
+                    <span>Economia:</span> Baixo custo de abastecimento por km rodado, além de manutenção reduzida, pois
+                    possuem menos
+                    peças móveis que um carro a combustão.
+                </p>
+
+                <p>
+                    <span>Tecnologia:</span> Muitos contam com direção semiautônoma, frenagem regenerativa, atualizações
+                    via
+                    software e
+                    interfaces totalmente digitais.
+                </p>
+            </div>
+
+            <div class="cars-eletrico">
+                <h3>Modelos:</h3>
+                <p>BYD (líder global em eletrificação com modelos robustos e custo-benefício imbatível)</p>
+                <p>Yangwang U7, U8 e U9 (luxo, tecnologia avançada e design futurista)</p>
+            </div>
+
+
+        </section>
+
+        <section class="carros-combustao">
+            <div class="inicio-seg">
+                <h1>Potência e Tradição <br> Carros a Combustão</h1>
+                <p>Os carros a combustão carregam décadas de evolução mecânica e engenharia automotiva. <br>
+                    São equipados com motores movidos a gasolina, etanol ou diesel, entregando potência sonora única,
+                    torque elevado e experiências inesquecíveis ao volante.</p>
+            </div>
+
+            <div class="vantagens-comb">
+                <p>
+                    🔥 <span>Emoção:</span> Nada substitui o ronco de um motor V8 ou V12 em um superesportivo como
+                    Lamborghini Huracán ou
+                    Camaro SS.
+                </p>
+
+                <p>
+                    🏁 <span>Performance Pura:</span> Alta velocidade final, respostas rápidas do acelerador e
+                    estabilidade
+                    impressionante em curvas.
+                </p>
+
+                <p>
+                    ⛽ <span>Abastecimento Rápido:</span> Reabastecer leva apenas alguns minutos em qualquer posto, sem a
+                    necessidade de
+                    carregadores elétricos.
+                </p>
+
+                <p>
+                    🔧 <span>Tradição e Cultura:</span> Símbolos de status, herança e paixão, com design aerodinâmico,
+                    bancos esportivos
+                    e tecnologias voltadas à condução esportiva.
+                </p>
+
+            </div>
+
+            <div class="cars-combustao">
+                <h3>Modelos:</h3>
+                <p>Chevrolet Camaro (muscle car americano clássico)</p>
+                <p>Porsche 911 (equilíbrio perfeito entre luxo e esportividade)</p>
+                <p>Lamborghini Aventador (design agressivo e motor V12 de tirar o fôlego)</p>
+            </div>
+        </section>
+
+        <section class="carros-hibridos">
+            <div class="inicio-hibri">
+                <h1>Carros Híbridos <br> Economia, Potência e Sustentabilidade em Um Só Veículo</h1>
+                <p>Os carros híbridos são a escolha perfeita para quem busca reduzir o consumo de combustível e as
+                    emissões de poluentes sem abrir mão da autonomia e da praticidade dos motores a combustão.</p>
+            </div>
+
+            <h4>Hibridos Existem dois tipos</h4>
+            <main class="tipos">
+                <div class="Plug">
+                    <h2>Hibridos Plug-in</h2>
+                    <h5>Como funcionam:</h5>
+                    <p>Possuem um motor elétrico e um motor a combustão.
+                        A bateria elétrica é recarregada em tomadas ou carregadores (como nos elétricos puros) e oferece
+                        autonomia que varia entre 30 km e 80 km apenas no modo elétrico, ideal para uso urbano.</p>
+
+                    <div class="vantagens-plug">
+                        <p>✅ Permitem rodar distâncias curtas usando apenas eletricidade, sem consumo de combustível.
+                        </p>
+                        <p>
+                            ✅ Caso a bateria acabe, o motor a combustão entra em funcionamento, eliminando a preocupação
+                            com
+                            pontos
+                            de recarga.
+                        </p>
+                        <p>✅ Economia significativa de combustível no dia a dia.</p>
+                    </div>
+                </div>
+
+                <div class="convencionais">
+                    <h2>Hibridos Convencionais</h2>
+                    <h5>Como funcionam:</h5>
+                    <p>Também combinam motor elétrico e a combustão, mas a bateria é carregada pelo próprio motor e pelo
+                        sistema de frenagem regenerativa, sem necessidade de recarga externa.</p>
+
+                    <div class="vantagens-conv"></div>
+                    <p>✅ Não precisam de tomada para carregar.</p>
+                    <p>
+                        ✅ Economia de combustível especialmente no trânsito urbano, onde o motor elétrico atua em baixas
+                        velocidades.
+                    </p>
+                    <p>✅ Menor emissão de poluentes comparado a carros exclusivamente a combustão.</p>
+                    <p>✅ Experiência de condução suave e silenciosa em modo elétrico.</p>
+                </div>
+            </main>
+            <h3>Porque escolher os hibridos?</h3>
+            <div class="por-hibri">
+
+                <p>Sustentabilidade: Menos poluentes lançados na atmosfera.</p>
+                <p>Economia: Menor consumo de combustível, ótimo para quem roda muito diariamente.</p>
+                <p>
+                    Praticidade: Não depende apenas de bateria como os elétricos, garantindo autonomia para viagens
+                    longas.
+                </p>
+                <p>
+                    Tecnologia: Sistemas inteligentes que alternam automaticamente entre os motores para otimizar
+                    desempenho e consumo.
+                </p>
+            </div>
+
+            <div class="cars-hibri">
+                <h3>Modelos:</h3>
+                <p>Toyota Corolla Hybrid: Economia impressionante com tecnologia confiável.</p>
+                <p>BYD Song Plus DM-i: SUV híbrido plug-in com alta autonomia e acabamento premium.</p>
+                <p>Porsche Panamera E-Hybrid: Esportividade aliada a sustentabilidade.</p>
+                <p>BMW X5 xDrive45e: Potência de sobra com baixíssimo consumo em trajetos urbanos.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <section class="Depoimentos" id="Depoimentos">
+        <h2>O que Nossos Clientes e Leitores Dizem</h2>
+        <div class="opniao">
+            <p>Sua opinião é muito importante para nós.</p>
+            <p>Queremos continuar trazendo o melhor conteúdo automotivo para você.</p>
+            <p>nvie também seu depoimento e ajude outros apaixonados por carros a fazerem a melhor escolha.</p>
+        </div>
+        <div class="depoiments">
+
+
+            <p>“Sempre sonhei em ter um Camaro. Antes de comprar, busquei informações em muitos sites, mas aqui
+                encontrei comparativos claros, ficha técnica completa e análise real. Consegui escolher o modelo
+                certo
+                para o meu uso. Atendimento excelente no WhatsApp quando tive dúvidas!”<span> - Lucas Martins - </span>
+            </p>
+
+
+
+            <p> “Os elétricos da Yangwang me surpreenderam muito. Eu não conhecia a marca e graças aos conteúdos do
+                site, vi que são carros potentes, com design premium e preços competitivos. Tirei todas as dúvidas
+                sobre
+                autonomia, recarga e custo-benefício. Agora estou me planejando para ter um U8!”<span> - Bruna Ferreira
+                    - </span></p>
+
+
+
+            <p>“Sou apaixonado por superesportivos, principalmente Porsche e Lamborghini, e sempre quis entender as
+                diferenças entre os modelos. Aqui encontrei artigos completos, linguagem fácil e informações
+                atualizadas. É meu portal favorito para estudar carros e ver as novidades do setor.”<span> - Diego
+                    Santos - </span></p>
+
+
+
+            <p>“Estou migrando para um carro híbrido e no site encontrei um guia que me explicou tudo sobre híbridos
+                plug-in, autonomia, carregamento e manutenção. Informação clara, sem enrolação e com exemplos reais
+                de modelos disponíveis no Brasil.”<span> - Amanda Lopes - </span></p>
+
+
+
+            <p>“Estava pesquisando uma caminhonete híbrida e achei o review da BYD Shark DM-i aqui. Fiquei
+                impressionado com a profundidade das informações, desde motor até consumo real. Agora sei que é a
+                melhor opção custo-benefício para minha empresa.”<span> - Rafael Oliveira - </span></p>
+
+
+
+            <p>“Adorei a forma como explicam os carros elétricos. Sempre tive dúvidas sobre tempo de carregamento e
+                durabilidade das baterias, mas os textos do site são claros, diretos e completos, sem linguagem
+                complicada.”<span> - Carla Mendes - </span></p>
+
+
+
+            <p>“O atendimento pelo WhatsApp foi ótimo. Me ajudaram a escolher entre o Porsche Taycan e o BYD Han EV
+                para meu uso urbano e viagens. Atendimento rápido e atencioso, coisa rara hoje em dia.”<span> - Thiago
+                    Lima - </span></p>
+
+
+
+            <p>“Gosto muito do design do site e da organização dos modelos. Fica fácil comparar os elétricos com os
+                a combustão. Além disso, os artigos motivam a realizar o sonho de ter um carro premium, com
+                explicações que passam confiança e profissionalismo.”<span> - Fernanda Souza - </span></p>
+
+
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+
+        <div class="inicio-sobre">
+            <h2>Quem Somos</h2>
+            <p>Somos uma equipe formada por especialistas apaixonados pelo mundo automotivo, com anos de experiência em
+                análise de veículos, tecnologia,
+                inovação e performance. Nosso objetivo é oferecer informações completas,
+                confiáveis e inspiradoras para todos que sonham em dirigir um supercarro ou desejam conhecer as
+                tecnologias mais avançadas do mercado.
+                Atendemos desde entusiastas de superesportivos, como Lamborghini, Porsche e Camaro,
+                até aqueles que procuram inovação e sustentabilidade nos elétricos e híbridos de marcas líderes como BYD
+                e Yangwang.</p>
+        </div>
+
+        <div class="missao">
+            <h4>Nossa Missão:</h4>
+            <p>Conectar pessoas aos carros que transformam suas vidas.</p>
+            <p>Trazer clareza, confiança e emoção em cada escolha automotiva, seja para realizar o sonho de um
+                superesportivo ou para entrar no futuro dos elétricos.</p>
+        </div>
+
+        <div class="visao">
+            <h4>Nossa Visão:</h4>
+            <p>Ser o portal automotivo mais confiável do Brasil, reconhecido pela qualidade das informações,
+                imparcialidade e paixão genuína por carros.</p>
+        </div>
+
+        <div class="valores">
+            <h4>Valores</h4>
+            <p>Paixão – Amamos carros e tecnologia</p>
+            <p>Inovação – Estamos sempre atualizados com as tendências automotivas</p>
+            <p>Transparência – Conteúdo claro e confiável, sem fake news</p>
+            <p>Excelência – Buscamos o melhor em cada detalhe que publicamos</p>
+            <p>Respeito – Valorizamos todos os visitantes e suas escolhas</p>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="inicio-contato">
+            <h2>Fale Conosco</h2>
+            <p>Está pronto para escolher o carro dos seus sonhos, tirar dúvidas ou receber consultoria personalizada
+                sobre superesportivos, híbridos e elétricos? Nossa equipe está pronta para te atender com agilidade e
+                profissionalismo.</p>
+        </div>
+
+        <div class="contato-container">
+            <div class="overlay">
+                <h5>Formas de Contato</h5>
+                <div class="contato-loc">
+                    <div>
+                        <p>WhatsApp:</p>
+                        <span>(00) 00000-0000</span>
+                        <span>Atendimento rápido de segunda a sexta, das 8h às 18h</span>
+                    </div>
+                    <div>
+                        <p>E-mail:</p>
+                        <span>Contato@seusite.com.br</span>
+                        <span>Respostas em até 24 horas úteis.</span>
+                    </div>
+                    <div>
+                        <p>Endereço:</p>
+                        <span>Rua dos superesportivo, 777 - Sua Cidade - SP</span>
+                        <span>(Atendimento presencial com agendamento prévio)</span>
+                    </div>
+                    <button><a href="#">Fale Conosco</a></button>
+                </div>
+
+                <div class="redes">
+                    <i class="ri-facebook-circle-fill" title="Facebook"></i>
+                    <i class="ri-instagram-fill" title="Instagram"></i>
+                    <i class="ri-discord-fill" title="Discord"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-name">
+            <form action="login.php">
+
+            </form>
+        </div>
+    </section>
+
+    <div id="blocoModelos" class="bloco-modelos">
+        <button onclick="fecharModelos()" class="fechar-btn">Voltar<i class="ri-arrow-right-line"></i></button>
+        <h2>Modelos de Carros</h2>
+        <p>Escolha entre superesportivos, híbridos e elétricos.</p>
+        <div class="carros-comb">
+            <h1>Carros a Combustão</h1>
+            <p>Carros a combustão são veículos que funcionam usando combustíveis como gasolina, etanol ou diesel. Dentro
+                do motor, acontece uma queima controlada (combustão) desse combustível, gerando energia para mover o
+                carro. Eles existem há mais de 100 anos e são muito comuns no mundo todo.</p>
+        </div>
+        <details>
+            <summary>Modelos</summary>
+            <div class="comb">
+                <div class="comb-carro">
+                    <img src="carros combustao/bmw.png" alt="bmw">
+                    <div class="observacao">
+                        <h3>BMW M4</h3>
+                        <P>Motor: 6 cilindros em linha 3.0L biturbo</P>
+                        <p>Potência: ~480–510 cv</p>
+                        <p>Velocidade Máx: ~290 km/h</p>
+                        <p>Destaques: Coupé esportivo equilibrado</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="comb-carro">
+                    <img src="carros combustao/audi.png" alt="audi">
+                    <div class="observacao">
+                        <h3>Audio R8</h3>
+                        <P>Motor: V10 5.2L (compartilhado com o Huracán)</P>
+                        <p>Potência: ~570–620 cv</p>
+                        <p>Velocidade Máx: ~330 km/h</p>
+                        <p>Destaques: Mistura luxo e performance</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="comb-carro">
+                    <img src="carros combustao/camaro.png" alt="camaro">
+                    <div class="observacao">
+                        <h3>Camaro SS</h3>
+                        <P>Motor: V8 6.2L naturalmente aspirado (LT1)</P>
+                        <p>Potência: Cerca de 455 cv e 62,9 kgfm de torque</p>
+                        <p>Velocidade Máxima: ~250–290 km/h (limitada eletronicamente)</p>
+                        <p>Câmbio: Automático de 10 marchas ou manual de 6 marchas</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="comb-carro">
+                    <img src="carros combustao/corvette.png" alt="corvette">
+                    <div class="observacao">
+                        <h3>Corvette Stingray</h3>
+                        <P>Motor: V8 6.2L central-traseiro</P>
+                        <p>Potência: ~495 cv</p>
+                        <p>Velocidade Máx: ~312 km/h</p>
+                        <p>Destaques: Supercarro acessível, motor central</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="comb-carro">
+                    <img src="carros combustao/dodge.png" alt="dodge">
+                    <div class="observacao">
+                        <h3>Dodge</h3>
+                        <P>Motor: V8 6.2L supercharged</P>
+                        <p>Potência: ~717–807 cv</p>
+                        <p>Velocidade Máx: ~327 km/h</p>
+                        <p>Destaques: Muscle car raiz, som absurdo</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="comb-carro">
+                    <img src="carros combustao/ferrari.png" alt="ferrari">
+                    <div class="observacao">
+                        <h3>Ferrari 488 GTB</h3>
+                        <P>Motor: V8 biturbo 3.9L</P>
+                        <p>Potência: ~670 cv</p>
+                        <p>Velocidade Máx: ~330 km/h</p>
+                        <p>Destaques: Design italiano agressivo</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="comb-carro">
+                    <img src="carros combustao/Jaguar.png" alt="jaquar">
+                    <div class="observacao">
+                        <h3>Jaguar F-Type</h3>
+                        <P>Motor: V8 5.0L supercharged</P>
+                        <p>Potência: ~575 cv</p>
+                        <p>Velocidade Máx: ~300 km/h</p>
+                        <p>Destaques: Estilo britânico clássico</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <div class="comb-carro">
+                    <img src="carros combustao/lamborguini.png" alt="lamborguini">
+                    <div class="observacao">
+                        <h3>Lamborghini Huracán</h3>
+                        <P>Motor: V10 5.2L aspirado</P>
+                        <p>Potência: ~610–640 cv</p>
+                        <p>Velocidade Máx: ~325 km/h</p>
+                        <p>Destaques: Visual brutal, som marcante</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="comb-carro">
+                    <img src="carros combustao/mcLaren.png" alt="mcLarem">
+                    <div class="observacao">
+                        <h3>McLaren 720S</h3>
+                        <P>Motor: V8 4.0L biturbo</P>
+                        <p>Potência: ~720 cv</p>
+                        <p>Velocidade Máx: ~341 km/h</p>
+                        <p>Destaques: Mistura luxo e performance</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="comb-carro">
+                    <img src="carros combustao/nissn.png" alt="Nissan">
+                    <div class="observacao">
+                        <h3>Nissan GT-R</h3>
+                        <P>Motor: V6 3.8L biturbo</P>
+                        <p>Potência: ~565–600 cv</p>
+                        <p>Velocidade Máx: ~315 km/h</p>
+                        <p>Destaques: “Godzilla”, tração integral inteligente</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="comb-carro">
+                    <img src="carros combustao/porche.png" alt="porsche">
+                    <div class="observacao">
+                        <h3>Porsche 911</h3>
+                        <P>Motor: Flat-6 (boxer) 3.0L biturbo</P>
+                        <p>Potência: ~385–450 cv (varia por versão)</p>
+                        <p>Velocidade Máx: ~295 a 310 km/h</p>
+                        <p>Destaques: Equilíbrio lendário</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </details>
+
+
+
+        <div class="carros-comb-eletrico">
+            <h1>Carros a Eletrico</h1>
+            <p>Carros elétricos usam motores movidos a eletricidade em vez de combustíveis fósseis. São silenciosos, têm
+                aceleração rápida, emitem zero poluentes durante o uso e oferecem baixo custo de manutenção. Modelos
+                como Tesla Model 3, Nissan Leaf e Porsche Taycan mostram que eles podem ser práticos, luxuosos ou
+                superesportivos. Além de ajudarem o meio ambiente, representam o futuro da mobilidade.
+            </p>
+        </div>
+        <details>
+            <summary>Modelos</summary>
+            <div class="comb-eletricos">
+                <div class="comb-carro">
+                    <img src="carros eletricos/yangwang.png" alt="byd">
+                    <div class="observacao">
+                        <h3>BYD yangwang U9</h3>
+                        <P>Motor: V10 5.2L (compartilhado com o Huracán)</P>
+                        <p>Potência: ~570–620 cv</p>
+                        <p>Velocidade Máx: ~330 km/h</p>
+                        <p>Destaques: Mistura luxo e performance</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="comb-carro">
+                    <img src="carros eletricos/tesla.png" alt="tesla">
+                    <div class="observacao">
+                        <h3>Tesla CyberTruck</h3>
+                        <P>Motor: V8 6.2L naturalmente aspirado (LT1)</P>
+                        <p>Potência: Cerca de 455 cv e 62,9 kgfm de torque</p>
+                        <p>Velocidade Máxima: ~250–290 km/h (limitada eletronicamente)</p>
+                        <p>Câmbio: Automático de 10 marchas ou manual de 6 marchas</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="comb-carro">
+                    <img src="carros eletricos/byd-byd.png" alt="byd">
+                    <div class="observacao">
+                        <h3>BYD SEAL</h3>
+                        <P>Motor: V8 6.2L central-traseiro</P>
+                        <p>Potência: ~495 cv</p>
+                        <p>Velocidade Máx: ~312 km/h</p>
+                        <p>Destaques: Supercarro acessível, motor central</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="comb-carro">
+                    <img src="carros eletricos/byd.png" alt="byd">
+                    <div class="observacao">
+                        <h3>Dodge</h3>
+                        <P>Motor: V8 6.2L supercharged</P>
+                        <p>Potência: ~717–807 cv</p>
+                        <p>Velocidade Máx: ~327 km/h</p>
+                        <p>Destaques: Muscle car raiz, som absurdo</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="comb-carro">
+                    <img src="carros eletricos/eletrico-b.png" alt="eletrico">
+                    <div class="observacao">
+                        <h3>Ferrari 488 GTB</h3>
+                        <P>Motor: V8 biturbo 3.9L</P>
+                        <p>Potência: ~670 cv</p>
+                        <p>Velocidade Máx: ~330 km/h</p>
+                        <p>Destaques: Design italiano agressivo</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="comb-carro">
+                    <img src="carros eletricos/eletrico.png" alt="eletrico">
+                    <div class="observacao">
+                        <h3>Jaguar F-Type</h3>
+                        <P>Motor: V8 5.0L supercharged</P>
+                        <p>Potência: ~575 cv</p>
+                        <p>Velocidade Máx: ~300 km/h</p>
+                        <p>Destaques: Estilo britânico clássico</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <div class="comb-carro">
+                    <img src="carros eletricos/porsche.png" alt="porsche">
+                    <div class="observacao">
+                        <h3>Lamborghini Huracán</h3>
+                        <P>Motor: V10 5.2L aspirado</P>
+                        <p>Potência: ~610–640 cv</p>
+                        <p>Velocidade Máx: ~325 km/h</p>
+                        <p>Destaques: Visual brutal, som marcante</p>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Ver Detalhes</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    </details>
+    </div>
+
+
+
+
+    </div>
+
+
+    <script>
+        function abrirModelos() {
+            document.getElementById('blocoModelos').style.display = 'block';
+        }
+
+        function fecharModelos() {
+            document.getElementById('blocoModelos').style.display = 'none';
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
