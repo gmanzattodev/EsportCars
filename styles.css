@@ -1135,6 +1135,9 @@ details:not([open]) .comb {
     summary{
         margin-bottom: 20px;
     }
+    .menu{
+        display: none;
+    }
 
 
   .comb  .comb-carro {
